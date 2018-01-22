@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div{
+				width: 300px;
+				height: 150px;
+				border: 1px solid #000000;
+				background-color: #CCCCCC;
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		window.onload=function(){
+			var oDiv=document.getElementById("div");
+			var oSpan=document.getElementById("span1");
+			var oTxt=document.getElementById("text1");
+			var oBtn=document.getElementById("btn");
+			oBtn.onclick=function(){
+				if(oTxt.value==''){//不能用一个=
+					alert("请输入一点内容吧~~");
+				}else{
+				oDiv.innerHTML+=oSpan.innerHTML+oTxt.value+"<br/>";
+				oTxt.value='';
+			}
+			};
+		};
+	</script>
+	<body>
+		<div id="div"></div>
+		<br />
+		<span id="span1">妙味:</span>
+		<input type="text" id="text1" />
+		<input type="button" id="btn" value="发送"/>
+	</body>
+</html>

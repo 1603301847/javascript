@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+			var oBtn=document.getElementById("btn");
+			var oTxt=document.getElementById("text1");
+	
+			oBtn.onclick=function(){
+				if(oTxt.value==''){
+					alert("请输入内容！！！");
+				}else if(oTxt.value=='CSS'){
+					 alert("口令正确");
+				}else if(oTxt.value=='JS'){
+					alert("口令正确");
+				}else if(oTxt.value=='HTML'){
+					alert("口令正确");
+				}else{
+					alert('您输入的'+oTxt.value+'不允许通过！！！');
+				}
+			};
+			};
+		</script>
+	</head>
+	<body>
+		通关口令：
+		<input type="text" id="text1" />
+		<input type="button" id="btn" value="验证"/>
+	</body>
+</html>

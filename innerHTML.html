@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oBtn=document.getElementById('btn1');
+				var oTxt=document.getElementById('text1');
+				var oP=document.getElementById('p1');
+					oBtn.onclick=function(){
+						//alert(oP.innerHTML);//读取元素内的所有HTML内容
+						oP.innerHTML=oTxt.value;//替换元素内的所有HTML内容
+						oTxt.value='';
+					};
+			};
+		</script>
+	</head>
+	<body>
+		<input id="text1" type="text" />
+		<input type="button" id="btn1" value="按钮" />
+		<p id="p1">这是一段文字</p>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oBtn=document.getElementById('btn1');
+				var oTxt=document.getElementById('text1');
+				var oSelect=document.getElementById('select1');
+				//访问页面就显示
+//				alert(oBtn.id);
+//				alert(oBtn.type);
+//				alert(oBtn.value);
+			oBtn.onclick=function(){//点击按钮才显示,属性的读操作
+//				alert(oBtn.id);
+//				alert(oBtn.type);
+//				alert(oBtn.value);
+//				alert(oTxt.value);
+//				alert(oSelect.value);
+				alert(oTxt.value+oSelect.value);//字符串的连接
+			};
+			};
+		</script>
+	</head>
+	<body>
+		<input id="text1" type="text" />
+		<select id="select1">
+			<option value="北京">北京</option>
+			<option value="上海">上海</option>
+			<option value="上海">上海</option>
+		</select>
+		<input type="button" id="btn1" value="按钮" />
+	</body>
+</html>

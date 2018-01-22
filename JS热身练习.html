@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#body{
+				background-color: linen;
+			}
+			strong{
+				font-size: 25px;
+				font-family: "微软雅黑";
+			}
+			.btn{
+				width: 100px;
+				height: 40px;	
+				background-color: #FF0000;		
+				color: #fff;	
+				border: none;
+			}
+			#div1{
+				border: 5px solid #000;
+				width: 100px;
+				height: 100px;
+				margin-top: 10px;
+				background-color: #fff;
+			}
+			#div2{
+				border: 20px solid #ccc;
+				width: 300px;
+				height: 180px;
+				background-color: #fff;
+				text-align: center;
+				line-height: 40px;
+				display: none;
+				margin-top: 200px;
+				margin-right: 1000px;
+				position: relative;
+				float: right;
+			}
+			ul{
+				list-style-type: none;
+				margin-left: 20px;
+				margin-top: 10px;
+				margin-bottom: 0px;
+				padding: 0px;
+				text-align: center;
+			}
+			ul li{
+				float: left;
+				font-weight: bold;			
+			}
+			#red_btn{
+				width: 40px;
+				height: 30px;
+				background-color: greenyellow;
+				color: #fff;
+				line-height: 30px;
+				text-align: center;
+				margin-left: 4px;
+				cursor: pointer;
+			}
+			#yellow_btn{
+				width: 40px;
+				height: 30px;
+				background-color: yellow;
+				color: #fff;
+				line-height: 30px;
+				text-align: center;
+				margin-left: 4px;	
+				cursor: pointer;			
+			}
+			#blue_btn{
+				width: 40px;
+				height: 30px;
+				background-color: cornflowerblue;
+				color: #fff;
+				line-height: 30px;
+				text-align: center;
+				margin-left: 4px;
+				cursor: pointer;
+			}
+			#num1,#num2,#num3,#num4,#num5,#num6{
+				width: 40px;
+				height: 28px;
+				border: 1px solid #ccc;
+				background-color: lavender;
+				color: darkgray;
+				line-height: 30px;
+				text-align: center;
+				margin-left: 4px;
+				cursor: pointer;
+			}
+			input{
+				width: 60px;
+				height: 30px;
+				padding: 0px;
+				color: #fff;
+				background-color: blue;
+				border: 1px solid #fff;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		window.onload=function(){
+			var obtn=document.getElementById('btn');
+			var obody=document.getElementById('body');
+			var odiv1=document.getElementById('div1');
+			var odiv2=document.getElementById('div2');
+			var ored_btn=document.getElementById('red_btn');
+			var oyellow_btn=document.getElementById('yellow_btn');
+			var oblue_btn=document.getElementById('blue_btn');
+			var onum1=document.getElementById('num1');
+			var onum2=document.getElementById('num2');
+			var onum3=document.getElementById('num3');
+			var onum4=document.getElementById('num4');
+			var onum5=document.getElementById('num5');
+			var onum6=document.getElementById('num6');
+			var obtn1=document.getElementById('btn1');
+			var obtn2=document.getElementById('btn2');
+			obtn.onclick=function(){
+				odiv2.style.display='block';
+				obody.style.background='darkgray';
+			}
+			ored_btn.onmouseover=function(){
+				ored_btn.style.color='#fff';
+				ored_btn.style.border='1px solid #000';
+				ored_btn.style.background='red';
+			}
+			ored_btn.onmouseout=function(){
+				ored_btn.style.background='greenyellow';
+				ored_btn.style.color='#fff';
+				ored_btn.style.border='none';
+			}
+			ored_btn.onclick=function(){
+				odiv1.style.background='red';
+				ored_btn.style.color='#fff';
+				ored_btn.style.border='1px solid #000';
+				ored_btn.style.background='red';
+			}
+			oyellow_btn.onmouseover=function(){
+				oyellow_btn.style.color='#000';
+				oyellow_btn.style.border='1px solid #000';
+				oyellow_btn.style.background='yellow';
+			}
+			oyellow_btn.onmouseout=function(){
+				oyellow_btn.style.background='yellow';
+				oyellow_btn.style.color='#fff';
+				oyellow_btn.style.border='none';
+			}
+			oyellow_btn.onclick=function(){
+				odiv1.style.background='yellow';
+				oyellow_btn.style.color='#000';
+				oyellow_btn.style.border='1px solid #000';
+				oyellow_btn.style.background='yellow';
+			}
+			oblue_btn.onmouseover=function(){
+				oblue_btn.style.color='#fff';
+				oblue_btn.style.border='1px solid #000';
+				oblue_btn.style.background='blue';
+			}
+			oblue_btn.onmouseout=function(){
+				oblue_btn.style.background='cornflowerblue';
+				oblue_btn.style.color='#fff';
+				oblue_btn.style.border='none';
+			}
+			oblue_btn.onclick=function(){
+				odiv1.style.background='blue';
+				oblue_btn.style.color='#fff';
+				oblue_btn.style.border='1px solid #000';
+				oblue_btn.style.background='blue';
+			}
+			onum1.onmouseover=function(){
+				onum1.style.color='#000';
+				onum1.style.border='1px solid #000';
+				onum1.style.background='orange';
+			}
+			onum2.onmouseover=function(){
+				onum2.style.color='#000';
+				onum2.style.border='1px solid #000';
+				onum2.style.background='orange';
+			}
+			onum3.onmouseover=function(){
+				onum3.style.color='#000';
+				onum3.style.border='1px solid #000';
+				onum3.style.background='orange';
+			}
+			onum4.onmouseover=function(){
+				onum4.style.color='#000';
+				onum4.style.border='1px solid #000';
+				onum4.style.background='orange';
+			}
+			onum5.onmouseover=function(){
+				onum5.style.color='#000';
+				onum5.style.border='1px solid #000';
+				onum5.style.background='orange';
+			}
+			onum6.onmouseover=function(){
+				onum6.style.color='#000';
+				onum6.style.border='1px solid #000';
+				onum6.style.background='orange';
+			}
+			onum1.onmouseout=function(){
+				onum1.style.border='1px solid #ccc';
+				onum1.style.background='lavender';
+				onum1.style.color='darkgray';
+			}
+			onum2.onmouseout=function(){
+				onum2.style.border='1px solid #ccc';
+				onum2.style.background='lavender';
+				onum2.style.color='darkgray';
+			}
+			onum3.onmouseout=function(){
+				onum3.style.border='1px solid #ccc';
+				onum3.style.background='lavender';
+				onum3.style.color='darkgray';
+			}
+			onum4.onmouseout=function(){
+				onum4.style.border='1px solid #ccc';
+				onum4.style.background='lavender';
+				onum4.style.color='darkgray';
+			}
+			onum5.onmouseout=function(){
+				onum5.style.border='1px solid #ccc';
+				onum5.style.background='lavender';
+				onum5.style.color='darkgray';
+			}
+			onum6.onmouseout=function(){
+				onum6.style.border='1px solid #ccc';
+				onum6.style.background='lavender';
+				onum6.style.color='darkgray';
+			}
+			onum1.onclick=function(){
+				odiv1.style.width='200px';
+			}
+			onum2.onclick=function(){
+				odiv1.style.width='300px';
+			}
+			onum3.onclick=function(){
+				odiv1.style.width='400px';
+			}
+			onum4.onclick=function(){
+				odiv1.style.height='200px';
+			}
+			onum5.onclick=function(){
+				odiv1.style.height='300px';
+			}
+			onum6.onclick=function(){
+				odiv1.style.height='400px';
+			}
+			obtn1.onclick=function(){
+				odiv1.style.width='100px';
+				odiv1.style.height='100px';
+				odiv1.style.background='#fff';
+			}
+			obtn2.onclick=function(){
+			     obody.style.background='linen';
+			     odiv2.style.display='none';
+			}
+		}
+	</script>
+	<body id='body'>
+		<strong>请为下面的DIV设置样式：</strong>
+		<input id="btn" class="btn" type="submit" value="点击设置" />
+		<div id="div2">
+			<ul>
+				<li>请选择背景色&nbsp;&nbsp;:</li>
+				<li id="red_btn">红</li>
+				<li id="yellow_btn">黄</li>
+				<li id="blue_btn">蓝</li>
+			<br />
+				<li>请选择宽(px)&nbsp;&nbsp;&nbsp;&nbsp;:</li>
+				<li id="num1">200</li>
+				<li id="num2">300</li>
+				<li id="num3">400</li>
+			<br />
+				<li>请选择高(px)&nbsp;&nbsp;&nbsp;&nbsp;:</li>
+				<li id="num4">200</li>
+				<li id="num5">300</li>
+				<li id="num6">400</li>
+			<br />
+			<input type="reset" id="btn1" value="恢复" />&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="submit" id="btn2" value="确定" />
+			</ul>
+		</div>
+		<div id="div1"></div>
+	</body>
+</html>

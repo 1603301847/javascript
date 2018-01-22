@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oBtn1=document.getElementById("btn1");
+				var oBtn2=document.getElementById("btn2");
+				var oP=document.getElementById("p1");
+				var num=15;
+				oBtn1.onclick=function(){
+					num --;
+					oP.style.fontSize=num+'px';
+				}
+				oBtn2.onclick=function(){
+					num ++;
+					oP.style.fontSize=num+'px';
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<input id="btn1" type="button" value="-"/>
+		<input id="btn2" type="button" value='+'/>
+		<p id="p1">新华社北京1月20日电  中共中央2017年12月15日在中南海召开党外人士座谈会，就中共中央关于修改宪法部分内容的建议听取各民主党派中央、全国工商联负责人和无党派人士代表的意见和建议。中共中央总书记习近平主持会议并发表重要讲话。</p>
+	</body>
+</html>

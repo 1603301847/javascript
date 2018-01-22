@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="inp" />
+		<script type="text/javascript">
+			var oInp=document.getElementById("inp");
+			oInp.onclick=function(){
+				oInp.type="checkbox";
+				//IE6  IE7 IE8不支持，解决方法：点击按钮，隐藏按钮，显示复选框
+			}
+		</script>
+	</body>
+</html>

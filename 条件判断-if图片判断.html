@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<img id="img1" src="img/1.jpg"/>
+		<script type="text/javascript">
+			var oImg=document.getElementById("img1");
+			var onOff=true;//创建开关： 布尔值： true 真  1 --- flase 假  0
+			oImg.onclick=function(){
+				if(onOff){
+					oImg.src='img/2.jpg';
+					onOff=false;
+				}else{
+					oImg.src='img/1.jpg';
+					onOff=true;
+				}
+			}
+		</script>
+	</body>
+</html>

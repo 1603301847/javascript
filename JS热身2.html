@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div{
+				background-color: red;
+				width: 200px;
+				height: 200px;
+				margin-top: 3px;
+				display: none;
+			}
+			#strong{
+				
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		window.onload=function(){
+			var odiv=document.getElementById('div');
+			var oshow=document.getElementById('show_btn');
+			var ohide=document.getElementById('hide_btn');
+			var ostrong=document.getElementById('strong');
+			oshow.onclick=show;
+			ostrong.onclick=show;
+			function show(){
+				odiv.style.display='block';
+			}
+//			oshow.onclick=function(){
+//				odiv.style.display='block';
+//			}
+			ohide.onclick=function(){
+				odiv.style.display='none';
+			}
+		}
+	</script>
+	<body>
+		<input id="show_btn" type="button" value="显示" />
+		<input id="hide_btn" type="button" value="隐藏" />
+		<strong id="strong">我也要让它显示</strong>
+		<div id="div"></div>
+		
+	</body>
+</html>

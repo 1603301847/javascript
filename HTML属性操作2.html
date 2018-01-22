@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oBtn=document.getElementById('btn1');
+				var oTxt=document.getElementById('text1');
+				var oSelect=document.getElementById('select1');
+				var oImg=document.getElementById('img1'); 
+				oBtn.onclick=function(){
+//					元素的写操作
+					//oBtn.value='btton';
+					//oTxt.value='按钮';//如果有input标签里设置了value值就是修改 没有值就是添加
+					//oTxt.value=oSelect.value;//替换
+					oImg.src=oTxt.value;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input id="text1" type="text" />
+		<select id="select1">
+			<option value="北京">北京</option>
+			<option value="上海">上海</option>
+			<option value="上海">上海</option>
+		</select>
+		<input type="button" id="btn1" value="按钮" />
+		<br />
+		<img id="img1" src="img/1.jpg" width="300"/>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.red{
+				width: 300px;
+				background-color: red;
+				padding: 20px;
+				color: yellow;
+				border: 10px solid #ccc;
+			}
+			.yellow{
+				width: 500px;
+				background-color: yellow;
+				padding: 20px;
+				color: red;
+				border: 10px solid #444;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oBtn1=document.getElementById("btn1");
+				var oBtn2=document.getElementById("btn2");
+				var oBtn3=document.getElementById("btn3");
+				var oBtn4=document.getElementById("btn4");
+				var oP=document.getElementById("p1");
+				var num=15;
+				oBtn1.onclick=function(){
+					num --;
+					oP.style.fontSize=num+'px';
+				};
+				oBtn2.onclick=function(){
+					num ++;
+					oP.style.fontSize=num+'px';
+				};
+				oBtn3.onclick=function(){
+//					oP.style.width='300px';
+//					oP.style.background='red';
+//					oP.style.padding='20px';
+//					oP.style.color='yellow';
+//					oP.style.border='10px solid #ccc';
+					oP.className='red';
+				};
+				oBtn4.onclick=function(){
+					oP.className='yellow';
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<input id="btn1" type="button" value="-"/>
+		<input id="btn2" type="button" value='+'/>
+		<input id="btn3" type="button" value='红'/>
+		<input id="btn4" type="button" value='黄'/>
+		<p id="p1">新华社北京1月20日电  中共中央2017年12月15日在中南海召开党外人士座谈会，就中共中央关于修改宪法部分内容的建议听取各民主党派中央、全国工商联负责人和无党派人士代表的意见和建议。中共中央总书记习近平主持会议并发表重要讲话。</p>
+	</body>
+</html>
