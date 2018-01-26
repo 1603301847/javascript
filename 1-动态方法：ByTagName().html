@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>获取元素方法二</title>
+		<script type="text/javascript">
+			window.onload=function(){
+//				查找ul下所有的li
+//				var oUl=document.getElementById("list");根据ID查找
+				var oUl=document.getElementsByTagName("ul")[0];
+				var aLi=oUl.getElementsByTagName("li");
+				alert(aLi.length);
+//				查找所有的li
+//				document.getElementsByTagName("li");
+			}
+		</script>
+	</head>
+	<body>
+		<ul id="list">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ol>
+			<li></li>
+			<li></li>
+		</ol>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>获取元素方法三</title>
+		<script type="text/javascript">
+			window.onload=function(){
+//				document.title;  
+//				document.title=123;
+//				document.body.innerHTML='abc';
+
+
+			var oBtn=document.getElementsByTagName("input");
+			document.body.innerHTML='<input type="button" value="按钮" /><input type="button" value="按钮" /><input type="button" value="按钮" />';
+//			alert(oBtn.length);
+			oBtn[0].onclick=function(){
+				alert(1);
+			};
+			oBtn[1].onclick=function(){
+				alert(2);
+			};
+			oBtn[2].onclick=function(){
+				alert(3);
+			};
+			};
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
